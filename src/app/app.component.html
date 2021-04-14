@@ -1,0 +1,18 @@
+<header>
+  <h1>{{ title }}</h1>
+  <p>Angular App</p>
+  <p>you are using: {{url }}</p>
+</header>
+
+<p>2 + 2 = {{ 2 + 2 }}</p>
+
+<ul>
+  <li *ngFor="let item of shoppingList">{{ item }}</li>
+</ul>
+
+<div class="">
+  <label for="item">What do you want to add</label>
+  <input type="text"
+         #thingy>
+  <button (click)="addItem(thingy)">Click To Add</button>
+</div>
